@@ -25,7 +25,7 @@ To adjust the S3 object store environment, users can simply change the settings 
 
   	// Set up an S3 client
 	//keys are created in the Minio console, may need to recreate them
-	//The keys can also use the ROOT Minio user credentials, but should not as a best practice
+	//The keys can also use the ROOT Minio user credentials, but not as secure.
 	$s3 = new S3Client([
 		'version' => 'latest',
 		'region' => 'us-east-1',
